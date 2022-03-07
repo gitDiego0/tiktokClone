@@ -13,5 +13,5 @@ main {
   height: auto;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  width: 375px;
+  /* width: 375px; */
 }
