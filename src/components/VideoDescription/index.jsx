@@ -4,19 +4,18 @@ import SongTicker from '../SongTicker/index'
 import styles from './styles.module.css'
 
 export default function VideoDescription({
-  author,
+  username,
   description,
   albumCover,
   songTitle,
 }) {
-  console.log(songTitle)
   return (
     <footer className={styles.description}>
       <div className={styles.textWrapper}>
         <section>
           <strong>
-            <a className={styles.author} href={`/users/${author}`}>
-              @{author}
+            <a className={styles.author} href={`/users/${username}`}>
+              @{username}
             </a>
           </strong>
           <p className={styles.text}>{description}</p>
