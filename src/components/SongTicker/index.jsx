@@ -3,7 +3,6 @@ import Marquee from 'react-fast-marquee'
 import styles from './styles.module.css'
 
 export default function SongTicker({ songTitle }) {
-  console.log(songTitle)
   return (
     <div className={styles.song}>
       <MusicIcon />
