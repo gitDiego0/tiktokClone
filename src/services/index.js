@@ -14,3 +14,14 @@ export const getVideos = async () => {
 
   return [error, data]
 }
+
+export const uploadVideo = async ({ videoFile }) => {
+  const filename = window.crypto.randomUUID()
+  const { data, error } = await supabase.storage
+    .from('videos')
+    .upload(`videos/${filename}.mp4`, videoFile)
+
+  return [error, data]
+}
+
+export const publishVideo = async ({ videoSrc, description }) => {}
